@@ -1,0 +1,205 @@
+
+// Colors Variables
+$cw: #fff;
+$cb: #222;
+$cm: #301c3f;
+$cs: #4e2a55;
+$ct: transparent;
+// Fonts Size Variables
+$h1s: 60px;
+$h2s: 40px;
+$h3s: 30px;
+$h4s: 25px;
+$h5s: 20px;
+$h6s: 16px;
+$psn: 14px;
+$pbs: 18px;
+// Font Family 
+$f1: 'Raleway',
+sans-serif;
+$f2: 'Open Sans',
+sans-serif;
+// Value
+$full: 100%;
+// =========== Variables End =========== 
+// =========== Mixin Start From Here  =========== /
+// Transition
+@mixin trans($property) {
+    -webkit-transition: $property 0.4s ease 0s;
+    -moz-transition: $property 0.4s ease 0s;
+    -o-transition: $property 0.4s ease 0s;
+    transition: $property 0.4s ease 0s;
+}
+
+// Browser Support
+@mixin prefixer($name, $argument) {
+    #{$name}: $argument;
+    -webkit-#{$name}: $argument;
+    -moz-#{$name}: $argument;
+    -ms-#{$name}: $argument;
+    -o-#{$name}: $argument;
+}
+
+// Button Hover
+@mixin btnhbr {
+    @include prefixer(box-shadow, 0px 0px 30px 1px #999);
+}
+
+// Button
+@mixin cntrBtn($pd, $mr, $radius, $bg, $clr, $fonts, $textTf) {
+    padding: $pd;
+    margin: $mr;
+    border-radius: $radius;
+    background-color: $bg;
+    color: $clr;
+    border: 1px solid #fff;
+    font-size: $fonts;
+    text-transform: $textTf;
+}
+
+
+// Gradient Background
+@mixin bgGrdnt() {
+    background: rgba(48, 28, 63, 1);
+    background: -moz-linear-gradient(left, rgba(48, 28, 63, 1) 0%, rgba(78, 42, 85, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(48, 28, 63, 1)), color-stop(100%, rgba(78, 42, 85, 1)));
+    background: -webkit-linear-gradient(left, rgba(48, 28, 63, 1) 0%, rgba(78, 42, 85, 1) 100%);
+    background: -o-linear-gradient(left, rgba(48, 28, 63, 1) 0%, rgba(78, 42, 85, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(48, 28, 63, 1) 0%, rgba(78, 42, 85, 1) 100%);
+    background: linear-gradient(to right, rgba(48, 28, 63, 1) 0%, rgba(78, 42, 85, 1) 100%);
+}
+
+// =========== Mixin End From Here  =========== 
+/* =========== normalize Start =========== */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $psn;
+    font-family: $f2;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+a,
+a:hover,
+a:focus {
+    color: $cb;
+    text-decoration: none;
+    outline: 0px;
+}
+
+a {
+    display: inline-block;
+    @include trans(all);
+}
+
+p {
+    font-size: $psn;
+    line-height: 24px;
+}
+
+img {
+    border: 0px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+ul,
+.form-group {
+    margin: 0px;
+    outline: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: $f1;
+}
+
+/* =========== normalize End =========== */
+
+// Font Import
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,500,600,700,800,900');
+/* =========== Body CSS Start From Here =========== */
+
+.banner{
+    @include bgGrdnt();
+    .bnrText{
+        min-height: 100vh;
+        color: $cw;
+        h1{
+            margin-bottom: 20px;
+        }
+        .buttons{
+            a{
+                color: $cw;
+                margin: 5px;
+                border: 1px solid $cw;
+                padding: 7px 30px;
+                border-radius: 2px;
+                font-weight: 500;
+                text-transform: uppercase;
+                position: relative;
+                overflow: hidden;
+                &::after{
+                    position: absolute;
+                    content: '\f105';
+                    top: 5px;
+                    right: -10px;
+                    font-family: FontAwesome;
+                    font-weight: 900;
+                    font-size: 16px;
+                    @include trans(all);
+                    opacity: 0;
+                }
+                &:hover{
+                    background-color: $cw;
+                    color: $cm;
+                    padding: 7px 40px 7px 20px;
+                    &::after{                        
+                        right: 20px;
+                        opacity: 1;
+                    }
+                }
+                &.active{
+                    background-color: $cw;
+                    color: $cm;
+                }
+            }
+        }
+    }    
+}
+
+.demos {    
+    min-height: 100vh;
+    .demoBox{
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+}

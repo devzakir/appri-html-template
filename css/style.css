@@ -1,0 +1,113 @@
+/* =========== normalize Start =========== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,500,600,700,800,900");
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif; }
+
+html,
+body {
+  overflow-x: hidden; }
+
+a,
+a:hover,
+a:focus {
+  color: #222;
+  text-decoration: none;
+  outline: 0px; }
+
+a {
+  display: inline-block;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; }
+
+p {
+  font-size: 14px;
+  line-height: 24px; }
+
+img {
+  border: 0px; }
+
+ul,
+li {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+ul,
+.form-group {
+  margin: 0px;
+  outline: 0px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Raleway", sans-serif; }
+
+/* =========== normalize End =========== */
+/* =========== Body CSS Start From Here =========== */
+.banner {
+  background: #301c3f;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #301c3f), color-stop(100%, #4e2a55));
+  background: -webkit-gradient(linear, left top, right top, from(#301c3f), to(#4e2a55));
+  background: linear-gradient(to right, #301c3f 0%, #4e2a55 100%); }
+  .banner .bnrText {
+    min-height: 100vh;
+    color: #fff; }
+    .banner .bnrText h1 {
+      margin-bottom: 20px; }
+    .banner .bnrText .buttons a {
+      color: #fff;
+      margin: 5px;
+      border: 1px solid #fff;
+      padding: 7px 30px;
+      border-radius: 2px;
+      font-weight: 500;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden; }
+      .banner .bnrText .buttons a::after {
+        position: absolute;
+        content: '\f105';
+        top: 5px;
+        right: -10px;
+        font-family: FontAwesome;
+        font-weight: 900;
+        font-size: 16px;
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        opacity: 0; }
+      .banner .bnrText .buttons a:hover {
+        background-color: #fff;
+        color: #301c3f;
+        padding: 7px 40px 7px 20px; }
+        .banner .bnrText .buttons a:hover::after {
+          right: 20px;
+          opacity: 1; }
+      .banner .bnrText .buttons a.active {
+        background-color: #fff;
+        color: #301c3f; }
+
+.demos {
+  min-height: 100vh; }
+  .demos .demoBox {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px; }

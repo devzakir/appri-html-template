@@ -1,0 +1,595 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .priceSliderControl,
+    .sliderControl{
+        display: none;
+    } 
+    .price {
+        padding-bottom: 55px;
+    }
+
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    section .container h2.headline {
+        @include headline(70px);
+    }
+    section.about .container h2.headline {
+        @include headline(50px);
+    }
+    .about, .feature {
+        padding-bottom: 90px;
+    }
+    .banners .bnr .bnrTxt {
+        margin-top: 140px;
+    }
+    
+    .banners .bnr .bnrimg {
+        width: 578px;
+        bottom: 40px;
+    }
+    .banners .bnr .bnrimg img{
+        max-width: 190px;
+    }
+    .banners .space{
+        height: 255px;
+    }
+    .about .abt_right ul li{
+        margin-bottom: 10px;
+    }
+    .about .abt_right ul li i {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .about .abt_right .lg_btns {
+        margin-top: 30px;
+    }
+    .about .abt_right .lg_btns a{
+        padding: 10px 25px;
+    }
+    .about .abt_right .lg_btns a p{
+        font-size: 18px;
+    }
+    .about .abt_right .lg_btns a i{
+        font-size: 50px;
+    }
+    .feature h2.headline {
+        margin-bottom: 90px;
+    }
+    .feature .featureImg img {
+        max-width: 400px;
+    }
+    .feature .features .feaOne .feaOneContent .feaOneBox .feaOneBoxTxt {
+        padding: 10px 15px;
+    }
+    .feature .features .feaOne .feaOneCntOne {
+        margin-bottom: 70px;
+        margin-top: 80px;
+    }
+    .feature .features .feaOne .feaOneCntTwo,
+    .feature .features .feaOne .feaOneCntThree,
+    .feature .features .feaOne .feaOneCntFour {
+        margin-left: 0;
+        margin-bottom: 90px;
+    }
+    .feature .features .feaOne .feaOneCntTwo .feaOneIcn .feaOneIcnRadius::before {
+        left: -219px;
+    }
+    .feature .features .feaOne .feaOneCntTwo .feaOneIcn .feaOneIcnRadius:after {
+        width: 207px;
+        left: -215px;
+    }
+    .feature .features .feaOne .feaOneCntTwo .feaOneBox .feaOneBoxTxt:after,
+    .feature .features .feaOne .feaOneCntTwo .feaOneBox .feaOneBoxTxt:before {
+        bottom: 60px;
+    }
+    .feature .features .feaOne .feaOneCntThree .feaOneBox .feaOneBoxTxt:after,
+    .feature .features .feaOne .feaOneCntThree .feaOneBox .feaOneBoxTxt:before{
+        bottom: 50px;
+    }
+
+    .feature .features .feaOne .feaOneCntFour .feaOneBox .feaOneBoxTxt:after,
+    .feature .features .feaOne .feaOneCntFour .feaOneBox .feaOneBoxTxt:before{
+        bottom: 45px;
+    }
+    .feature .features .feaOne .feaOneCntThree .feaOneIcn .feaOneIcnRadius::before {
+        left: -229px;
+    }
+    .feature .features .feaOne .feaOneCntThree .feaOneIcn .feaOneIcnRadius:after {
+        width: 215px;
+        left: -224px;
+    }
+    .video .video_bg{
+        max-height: 175px;
+        .videoPreviewCenter  {
+            width: 600px;
+        }
+    }
+    section.video .container h2.headline {
+        @include headline(130px);
+    }
+    .price{
+        padding-bottom: 58px;
+    }
+    .priceSliderControl{
+        display: none;
+    } 
+    
+    .flat .banners .bnr .bnrimg img {
+        max-width: 165px;
+    }
+
+    
+
+
+}
+
+// Laptop Device
+@media (min-width: 1024px) and (max-width: 1199.98px) { 
+    .feature{
+        padding-bottom: 36px;
+    }
+    .sliderDots{
+        display: none;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    section .container h2.headline {
+        @include headline(40px);
+    }
+    .main_header .siteMenu .menu .menubar li a {
+        padding: 20px 10px;
+    }
+
+    .banners .bnr .bnrTxt {
+        margin-top: 150px;
+    }
+
+    .banners .space {
+        height: 300px;
+        width: 100%;
+        display: block;
+    }
+    .banners .bnr .bnrimg {
+        width: 560px;
+        bottom: 10px;
+    }
+    .banners .bnr .bnrimg img {
+        max-width: 184px;
+    }
+    .about {
+        padding-bottom: 80px;
+    }
+    .abt_left {
+        text-align: center;
+    }
+    section.feature .container h2.headline {
+        margin-bottom: 80px;
+    }
+    .feature .featureImg img {
+        max-width: 100%;
+    }
+    .feature .features .feaOne .feaOneContent .feaOneIcn {
+        display: none;
+    }
+    .feature .features .feaOne .feaOneContent .feaOneBox{
+        position: unset;
+    }
+    .feature .features .feaOne .feaOneContent {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .feature .features .feaOne .feaOneContent .feaOneBox .feaOneBoxTxt {
+        padding: 10px 20px;        
+    }
+    .feature .features .feaOne .feaOneContent .feaOneBox .feaOneBoxTxt:before,
+    .feature .features .feaOne .feaOneContent .feaOneBox .feaOneBoxTxt:after{
+        position: unset;
+    }
+    .feature .features .feaOne .feaOneContent .feaOneBox .feaOneBoxTxt h4{
+        margin-bottom: 5px;
+    }
+    .video .video_bg{
+        min-height: 140px;
+        margin-top: 80px;
+    }
+    .video .video_bg .videoPreviewCenter {
+        width: 500px;
+    }
+    
+    .counter .counterBox .counterOne{
+        padding: 16px 0px 28px;
+        min-width: 90px;
+    }
+    .price{
+        .priceBox{
+            margin: 20px 0 40px;
+            .priceBoxOne {
+                background-color: $cw;
+                border-radius: 10px;
+                @include prefixer(box-shadow,0px 0px 20px -1px #c1c1c1);
+                h4 {
+                    @include bgGrdnt();
+                    color: #fff;
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+            .signUp {
+                opacity: 1;
+            }
+            &:hover,
+            &.active {
+                @include prefixer(transform, scale(1));
+            }
+        }
+    }
+    .flat .banners .bnr .bnrTxt {
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 55px;
+    }
+    .flat .banners .bnr .bnrimg{
+        margin: 0 auto;
+    }
+}
+
+// responsive navbar (Phones, less than 767.98px)
+@media (max-width: 767.98px){
+    .main_header .siteMenu .brand {
+        width: 21.666667%;
+    }
+    .main_header .siteMenu .menu.menuToggle{
+        width: 100%;
+    }
+    .main_header .siteMenu .navIcon{
+        width: 8%;
+    }
+    .brand{
+        order: 1;
+        flex-grow: 1;
+        width: 50%;
+    }
+    .navIcon {
+        order: 2;
+        flex-grow: 1;
+        width: 50%;
+        text-align: right;
+    }
+    .menu {
+        order: 3;
+        flex-grow: 2;
+        width: 100%;
+    }
+    .main_header .siteMenu .menu .menubar {
+        width: 100%;
+    }
+    .main_header .siteMenu .menu .menubar li{
+        float: none;
+        width: 100%;
+    }
+
+    .main_header .siteMenu .menu {
+        visibility: hidden;
+        @include prefixer(transform, translateY(0%) rotateZ(0deg));
+        .menubar{
+            margin-top: 10px;
+            @include prefixer(transform, translateY(-120%));
+            display: none;        
+        }
+    }
+    .main_header .siteMenu .menu.menuToggle{
+        visibility: visible;
+        .menubar{
+            @include prefixer(transform, translateY(0%));
+            display: block;
+            li {
+                a{
+                    padding:20px;
+                    display: block;
+                }
+            }
+        }
+    }    
+    .main_header.sticky .siteMenu .menu.menuToggle {
+        .menubar{
+            li{
+                a {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+    .main_header.sticky {
+        padding: 7px 0px;
+    }
+    .feature{
+        .featureImg{
+            img{
+                max-width: 100%;
+            }
+        }
+        .features{
+            .feaOne{
+                .feaOneContent{
+                    margin: 20px 0px;
+                    .feaOneIcn{
+                        display: none;
+                    }
+                    .feaOneBox {
+                        position: unset;
+                        .feaOneBoxTxt{
+                            margin: 0 auto;
+                            &::after, &::before{
+                                position: unset;
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .price{
+        .priceBox{
+            margin-bottom: 20px;
+            .priceBoxOne {
+                background-color: $cw;
+                border-radius: 10px;
+                @include prefixer(box-shadow,0px 0px 20px -1px #c1c1c1);
+                h4 {
+                    @include bgGrdnt();
+                    color: #fff;
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+            .signUp {
+                opacity: 1;
+            }
+            &:hover,
+            &.active {
+                @include prefixer(transform, scale(1));
+            }
+        }
+    }
+    .testimonial{
+        .testimonialContent{
+            padding-top: 50px;
+            .testiImg{
+                position: unset;
+                @include prefixer(transform, translateY(0%));
+                img{
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .teamMember {
+        .teamMemberOne{
+            margin-bottom: 15px;
+        }
+    }
+
+    .subFooter{
+        .sfContent{
+            .lg_btns{
+                a {
+                    padding: 15px 25px;
+                    i{
+                        font-size: 35px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        .abt_right{
+            ul {
+                li{
+                    margin-bottom: 10px;
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .lg_btns{
+                a {
+                    padding: 15px 25px;
+                    i{
+                        font-size: 35px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .screenshot{
+        .screenshots {
+            .slick-active {
+                &.scrnshotOne {
+                    img{
+                        @include prefixer(transform, rotateY(0deg));
+                        margin: auto;
+                    }
+                }
+            }
+            .scrnArrow {
+                .scrnArrowLeft, 
+                .scrnArrowRight{
+                    width: 48%;
+                    display: inline-block !important;
+                }
+            }
+        }
+    }
+    .counterBox {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .flat {
+        .banners {
+            .bnr {
+                .bnrTxt {
+                    margin-top: 0;
+                    text-align: center;
+                    margin-bottom: 55px;
+                }
+                .bnrimg{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .banners {
+        .bnr {
+            .bnrimg{
+                width: 520px;
+                img {
+                    max-width: 170px;
+                }
+            }
+        }
+        .space{
+            height: 270px;
+        }
+    }
+    .about{ 
+        .abt_right{
+            .lg_btns{
+                a{
+                    i {
+                    font-size: 40px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .video{
+        h2.headline{
+            margin-bottom: 146px;
+        }
+        .video_bg{
+            min-height: 170px;
+            .videoPreviewCenter{
+                .video_preview{
+                    width: 550px;
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .banners .bnr .bnrimg{
+        width: 100%;
+        img {
+            width: 32%;
+        }
+    } 
+    .main_header .siteMenu .menu .menubar{
+        padding: 0px 10px;
+    }
+}
+
+@media (min-width: 480px) and (max-width:575.98px ){    
+    .banners .space {
+        height: 243px;
+    }
+    .video .video_bg .videoPreviewCenter{
+        width: 460px;
+    }
+    .video .video_bg{
+        min-height: 139px;
+    }
+    .video h2.headline {
+        margin-bottom: 144px;
+    }
+    .video {
+        padding-bottom: 118px;
+    }
+}
+
+@media (max-width:479.98px){
+    .banners .bnr .bnrTxt {
+        margin-top: 135px;
+    }
+    .banners .bnr .bnrTxt{
+        h1 {
+            font-size: 40px;
+        }
+        h3{
+            font-size: 20px;
+        }
+    }
+    .banners .bnr .bnrTxt .storeButtons .nbtn {
+        padding: 8px 13px;
+    }
+    .banners .bnr{
+        height: 475px;
+    }
+    .banners .space {
+        height: 190px;
+    }
+    .about .abt_right .lg_btns a {
+        margin-bottom: 10px;
+    }
+    .feature .features .feaOne .feaOneContent .feaOneBox .feaOneBoxTxt {
+        padding: 20px 30px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .video h2.headline {
+        margin-bottom: 80px;
+    }
+    .video .video_bg .videoPreviewCenter .video_preview img {
+        display: none;
+    }
+    .video {
+        padding-bottom: 80px;
+    }
+    .subFooter .sfContent .lg_btns{
+        flex-wrap: wrap;
+    }
+    .subFooter .sfContent .lg_btns a:first-child{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .counter div.width20{
+        width: 50%;
+        margin: auto;
+        
+    }
+    .price{
+        h2.headline{
+            margin-bottom: 46px;
+        }
+    }
+    .team {
+        h2.headline{
+            margin-bottom: 77px;
+        }
+    }
+    .counter .counterBox .counterOne {
+        min-width: 150px;
+        color: #fff;
+        padding: 20px 0px;
+    }
+}
+
